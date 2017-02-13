@@ -1,0 +1,67 @@
+@import "../mixin";
+@import "../vars";
+
+.mask-fade-enter-active,
+.mask-fade-leave-active {
+    transition: opacity 0.3s;
+}
+
+.mask-fade-enter,
+.mask-fade-leave-active {
+    opacity: 0;
+}
+
+.xm-mobile-action-sheet-mask {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.xm-mobile-action-sheet-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #efeff4;
+    z-index: 200;
+    transform: translate(0, 100%);
+    transition: transform 0.3s;
+
+    &.body-show {
+        transform: translate(0, 0);
+    }
+}
+
+.xm-mobile-action-sheet-list {
+    height: px2rem(400px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    > div {
+        position: relative;
+        background: white;
+        height: px2rem(80px);
+        line-height: px2rem(80px);
+        text-align: center;
+        border-top: $borderWidth solid $borderColor;
+        @include font-dpr($bigFontSize);
+
+        &:first-child {
+            border-top: none;
+        }
+    }
+}
+
+.xm-mobile-action-sheet-cancel {
+    color: #FC7251;
+    margin-top: px2rem(12px);
+    background: white;
+    height: px2rem(80px);
+    line-height: px2rem(80px);
+    text-align: center;
+    @include font-dpr($bigFontSize);
+}
