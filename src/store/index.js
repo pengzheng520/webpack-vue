@@ -12,18 +12,6 @@ const store = new Vuex.Store({
     state: {
         PATH: '/m',
         AJAXURL: '/api',
-        // HOST: 'http://ma2.test.ximalaya.com',
-        HOST: 'http://a.ximalaya.com',
-        // IMG_HOST: 'http://static2.test.ximalaya.com/source/mobile_a/0.4.0/dist',
-        IMG_HOST: 'http://s1.xmcdn.com/lib/mobile_a/last/dist',
-        // AHCHOR_CENTER: 'http://ma2.test.ximalaya.com?source=ma',
-        AHCHOR_CENTER: 'http://ma.ximalaya.com?source=ma',
-        // USER_TOKEN: '4&_token',
-        USER_TOKEN: '1&_token',
-        // REMEMBER_ME: '4&remember_me',
-        REMEMBER_ME:'1&remember_me',
-        // WEBSOCKET_URL: 'ma2.test.ximalaya.com',
-        WEBSOCKET_URL: 'a.ximalaya.com',
         /**
          * [player 单条声音播放器]
          * @type {Object}

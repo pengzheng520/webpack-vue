@@ -14,7 +14,7 @@ let views = [];
  * 入口文件添加块
  * @type {string[]}
  */
-entry['vendor'] = ['vue', 'vue-router', 'vuex', 'element-ui'];
+entry['vendor'] = ['vue', 'vue-router', 'vuex'];
 for (let i = 0; i < files.length; i++) {
     let arr = [files[i]];
     arr.push('vendor');

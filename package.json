@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --colors",
-    "build": "rimraf dist && webpack --config config/webpack.pro.js --progress --colors --profile --bail && cp -r src dist"
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --colors --profile --bail && cp -r src dist"
   },
   "repository": {
     "type": "git",
@@ -41,21 +41,21 @@
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "vue-loader": "^9.7.0",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.2",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.3",
     "webpack-merge": "^0.14.1"
   },
   "dependencies": {
+    "axios": "^0.15.3",
     "lodash": "^4.17.4",
-    "vee-validate": "^2.0.0-beta.17",
+    "mockjs": "^1.0.1-beta3",
+    "vee-validate": "^2.0.0-beta.22",
     "vue": "^2.1.8",
     "vue-infinite-loading": "^2.0.0-rc.5",
-    "vue-resource": "^1.0.3",
     "vue-router": "^2.1.1",
-    "vue-upload-component": "^2.1.0-beta.1",
     "vue-template-compiler": "^2.1.8",
-    "vuex": "^2.1.1",
-    "mockjs": "^1.0.1-beta3"
+    "vue-upload-component": "^2.1.0-beta.1",
+    "vuex": "^2.1.2"
   },
   "output": [
     "dist/index.html",
